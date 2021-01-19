@@ -1,6 +1,6 @@
 .App-header {
   background-color: #fff;
-  min-height: 100vh;
+  min-height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -69,7 +69,7 @@ h6.user_i {
 }
 .no-result-found {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  position: absolute;
+  position: relative;
   width: 100%;
   top: 100%;
   padding: 30px 0;
@@ -100,4 +100,99 @@ input[type="search"]:focus::-webkit-search-cancel-button {
 input[type="search"].dark::-webkit-search-cancel-button {
   filter: invert(1);
   cursor: pointer;
+}
+.add_new_user {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  width: 100%;
+  top: 100%;
+  max-width: 350px;
+  margin: auto;
+  padding: 30px;
+  float: left;
+  overflow: hidden;
+}
+
+.add_new_user {
+  position: relative;
+}
+.add_new_user div .input-group input {
+  width: 90%;
+  height: 36px;
+  padding: 5px 8px 5px 14px;
+  font-family: Helvetica, sans-serif;
+  background: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+.add_new_user div .input-group select {
+  width: 96%;
+  height: 48px;
+  padding: 10px 8px 10px 14px;
+  font-family: Helvetica, sans-serif;
+  background: #ffffff;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+.add_new_user div h3 {
+  text-align: center;
+  margin-top: 0;
+}
+.add_new_user div .input-group label {
+  margin-bottom: 7px;
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+}
+.add_new_user div .input-group button {
+  float: right;
+  background: red;
+  color: #fff;
+  border: 0;
+  padding: 10px 21px;
+  display: block;
+  margin-right: 14px;
+  border-radius: 5px;
+  margin-top: 10px;
+}.input-group.item-list button {
+  position: absolute;
+  top: 28%;
+  right: 4px;
+}
+
+.input-group.item-list {
+  position: relative;
+}
+.search-section_new {
+  float: right;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  width: 100%;
+  top: 100%;
+  max-width: 350px;
+  margin: auto;
+  padding: 30px;
+  overflow: hidden;
+}
+#root {
+  overflow: hidden;
+  padding: 50px;
+}
+.add_new_user div .input-group button:focus {
+  background: green;
+  border-color: green;
+  outline: 0;
+}
+strong {
+  background: red;
+  color: white;
+  font-weight: inherit;
+}
+h6.item_list {
+  border-top: 1px solid #ccc;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  margin: 10px 0;
 }
